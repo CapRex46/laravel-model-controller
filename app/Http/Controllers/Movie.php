@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\MovieModel;
+use App\Movie;
 use Illuminate\Http\Request;
 
-class MovieController extends Controller
+class Movie extends Controller
 {
     public function index() {
-        $data = MovieModel::all();
+        $data = Movie::all();
         dump($data);
         return view('home', compact("data"));
      }
