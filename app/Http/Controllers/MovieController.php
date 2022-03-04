@@ -9,5 +9,5 @@ class MovieController extends Controller
 {
     $data = MovieModel::all();
     dump($data);
-    return view('movie.home', compact("data"));
+    return view('home', compact("data"));
 }
